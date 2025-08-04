@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>esquina51 - Agencia Digital</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+    main {
+      margin-top: 30px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>esquina51</h1>
+    <p>Micro agencia digital</p>
+  </header>
+  <main>
+    <h2>¿Quiénes somos?</h2>
+    <p>Asesoramos marcas y emprendimientos en su estrategia de marketing digital.</p>
+    <h2>¿Qué hacemos?</h2>
+    <p>Publicidad, redes sociales, automatización y consultoría estratégica.</p>
+    <h2>Contacto</h2>
+    <p>Escríbenos a: esquina51pro@outlook.com</p>
+  </main>
+  <footer>
+    &copy; 2025 esquina51 - Todos los derechos reservados
+  </footer>
+</body>
+</html>
