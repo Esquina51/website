@@ -1,70 +1,141 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>esquina51.pro – Agencia Boutique de Marketing Digital</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <style>
-    /* Colores inspirados en Sandbox */
-    :root {
-      --primary-color: #4A3AFF;
-      --accent-color: #FF5C2E;
-      --bg-color: #F6F7FF;
-      --text-color: #333;
-    }
-    body { margin:0; padding:0; background: var(--bg-color); color: var(--text-color); font-family:'Segoe UI',sans-serif; }
-    header { background: var(--primary-color); color: white; text-align:center; padding:5rem 2rem; }
-    header h1 { font-size:3rem; margin-bottom:0.5rem; }
-    header p { font-size:1.2rem; max-width:800px; margin:0 auto; line-height:1.6; }
-    .hero { position:relative; text-align:center; margin-bottom:3rem; }
-    .hero svg { max-width:600px; width:100%; height:auto; }
-    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; max-width:1000px; margin:0 auto 3rem auto; padding:0 2rem; }
-    .service { background:white; padding:2rem; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s ease; }
-    .service:hover { transform:translateY(-8px); }
-    .service i { font-size:3rem; color: var(--accent-color); margin-bottom:1rem; }
-    .service h3 { margin-bottom:0.5rem; color: var(--primary-color); }
-    .service p { font-size:1rem; color:#555; }
-    .cta { background: var(--accent-color); color:white; text-align:center; padding:3rem; border-radius:12px; max-width:700px; margin:0 auto 4rem auto; }
-    .cta h2 { margin:0; font-size:2rem; }
-    .cta a { margin-top:1rem; display:inline-block; background:white; color: var(--accent-color); padding:1rem 2rem; border-radius:40px; font-weight:600; text-decoration:none; box-shadow:0 6px 18px rgba(0,0,0,0.1); transition:background-color 0.3s ease, color 0.3s ease; }
-    .cta a:hover { background: var(--primary-color); color:white; }
-    footer { text-align:center; padding:2rem 1rem; font-size:0.9rem; color:#777; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>esquina51.pro – Agencia Boutique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary: #4A3AFF;
+      --accent: #FF5C2E;
+      --bg: #f6f7fb;
+      --text: #333;
+    }
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .text-section {
+      flex: 1 1 500px;
+      padding-right: 2rem;
+    }
+    .text-section h1 {
+      font-size: 2.8rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .text-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .text-section a {
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero-img {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+    .hero-img img {
+      max-width: 100%;
+      height: auto;
+    }
+    section.services {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .service {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .service i {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .service h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>esquina51.pro</h1>
-  <p>Agencia boutique de marketing digital que combina estrategia, datos y creatividad para ayudarte a vender más y crecer mejor. Nos especializamos en campañas efectivas, automatización inteligente y asesoría personalizada para marcas que buscan resultados reales, no solo presencia digital.</p>
+  <div class="text-section">
+    <h1>esquina51.pro</h1>
+    <p>
+      Agencia boutique de marketing digital que combina estrategia, datos y creatividad para ayudarte a vender más y crecer mejor. Nos especializamos en campañas efectivas, automatización inteligente y asesoría personalizada para marcas que buscan resultados reales, no solo presencia digital.
+    </p>
+    <a href="https://wa.me/50233073716" target="_blank">Contáctanos por WhatsApp</a>
+  </div>
+  <div class="hero-img">
+    <img src="assets/images/hero-illustration.svg" alt="Ilustración marketing" />
+  </div>
 </header>
 
-<section class="hero">
-  <!-- Ilustración estilo Sandbox: personaje y elementos flotantes -->
-  <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
-    <rect width="600" height="300" fill="var(--primary-color)" rx="20"/>
-    <circle cx="150" cy="200" r="80" fill="#FFFFFF" opacity="0.2"/>
-    <circle cx="450" cy="150" r="100" fill="#FFFFFF" opacity="0.15"/>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="28" font-family="Arial">Ilustración profesional al estilo Sandbox</text>
-  </svg>
-</section>
-
 <section class="services">
-  <div class="service"><i class="fas fa-bullhorn"></i><h3>Campañas Publicitarias</h3><p>Gestionamos campañas en redes, Google Ads y más para maximizar tus resultados.</p></div>
-  <div class="service"><i class="fas fa-robot"></i><h3>Automatización Inteligente</h3><p>Flujos estratégicos para convertir leads y fidelizar clientes.</p></div>
-  <div class="service"><i class="fas fa-lightbulb"></i><h3>Consultoría Estratégica</h3><p>Diseñamos estrategias alineadas a tus objetivos de negocio.</p></div>
-  <div class="service"><i class="fas fa-pencil-alt"></i><h3>Branding</h3><p>Construcción y posicionamiento de una identidad sólida.</p></div>
-  <div class="service"><i class="fas fa-camera-retro"></i><h3>Contenido Creativo</h3><p>Diseño y gestión de contenido que conecta y convierte.</p></div>
+  <div class="service">
+    <i class="fas fa-bullhorn"></i>
+    <h3>Campañas Publicitarias</h3>
+    <p>Gestión en redes y buscadores para resultados reales.</p>
+  </div>
+  <div class="service">
+    <i class="fas fa-robot"></i>
+    <h3>Automatización Inteligente</h3>
+    <p>Convierte leads y fideliza con flujos automáticos.</p>
+  </div>
+  <div class="service">
+    <i class="fas fa-lightbulb"></i>
+    <h3>Consultoría Estratégica</h3>
+    <p>Planeamos contigo una estrategia con impacto real.</p>
+  </div>
+  <div class="service">
+    <i class="fas fa-pencil-alt"></i>
+    <h3>Branding y Posicionamiento</h3>
+    <p>Hacemos que tu marca se vea, suene y conecte.</p>
+  </div>
+  <div class="service">
+    <i class="fas fa-camera-retro"></i>
+    <h3>Contenido Creativo</h3>
+    <p>Contenidos que impactan, educan y venden.</p>
+  </div>
 </section>
 
-<section class="cta">
-  <h2>¿Quieres impulsar tu negocio?</h2>
-  <p>Contáctanos para una asesoría boutique personalizada.</p>
-  <a href="https://wa.me/50233073716" target="_blank">Escríbenos en WhatsApp</a>
-</section>
-
-<footer>© 2025 esquina51.pro - Todos los derechos reservados</footer>
+<footer>
+  © 2025 esquina51.pro – Todos los derechos reservados.
+</footer>
 
 </body>
 </html>
