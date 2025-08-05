@@ -1,152 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>esquina51 · Agencia Digital Estratégica</title>
-<style>
-  /* RESET BÁSICO */
-  *, *::before, *::after { box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; padding: 0;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  #wrapper {
-    max-width: 900px;
-    margin: 2rem auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
-  header#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-  }
-  header#header .logo {
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: #0078d7;
-    text-decoration: none;
-  }
-  header#header .icons a {
-    color: #0078d7;
-    margin-left: 1rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  /* BOTONES */
-  .button {
-    display: inline-block;
-    background: #0078d7;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease;
-    margin-right: 1rem;
-  }
-  .button:hover {
-    background: #005fa3;
-  }
-  /* SECCIONES */
-  section {
-    margin-bottom: 3rem;
-  }
-  h1, h2 {
-    color: #0078d7;
-    margin-bottom: 0.5rem;
-  }
-  ul, ol {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  blockquote {
-    border-left: 4px solid #0078d7;
-    padding-left: 1rem;
-    color: #555;
-    font-style: italic;
-  }
-  footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #888;
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
-  }
-  a {
-    color: #0078d7;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>esquina51.pro - Agencia de Marketing Digital</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- Icons8 CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pIVl+6zN+HLnRO1clz3OWlHc+V+6+JH8kBv4KFcMr7F4He8cHbL5Mr2lxIvXwRmkHdnJxfysG8DdQ+3PqDaxjg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    /* Personalización rápida para esquina51 */
+    :root {
+      --main-color: #2c3e50;
+      --accent-color: #e67e22;
+      --bg-color: #f5f7fa;
+      --text-color: #333;
+      --btn-bg: var(--accent-color);
+      --btn-hover: #d96c17;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    header, footer {
+      background-color: var(--main-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: var(--main-color);
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .hero {
+      padding: 3rem 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-top: 1rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .service-item {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+    .service-icon {
+      font-size: 3rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+    .contact-section {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .btn-whatsapp {
+      background-color: var(--btn-bg);
+      color: white;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-whatsapp:hover {
+      background-color: var(--btn-hover);
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
-  <div id="wrapper">
 
-    <header id="header">
-      <a href="#" class="logo">esquina51 · Agencia Digital Estratégica</a>
-      <div class="icons">
-        <a href="https://wa.me/50233073716" target="_blank" title="WhatsApp">📱</a>
-        <a href="mailto:hola@esquina51.com" title="Email">✉️</a>
-      </div>
-    </header>
+<header>
+  <h1>esquina51.pro</h1>
+  <p>Micro agencia de marketing digital para vender más y crecer mejor</p>
+</header>
 
-    <section id="banner">
-      <h1>🚀 Estrategia, publicidad y automatización para hacer crecer tu negocio digital.</h1>
-      <p>👋 Somos esquina51, tu agencia aliada para vender más con menos esfuerzo.</p>
-      <a href="https://wa.me/50233073716" class="button" target="_blank">Hablemos por WhatsApp</a>
-      <a href="#" class="button">Solicita tu diagnóstico gratis</a>
-    </section>
+<main class="container">
 
-    <section>
-      <h2>🎯 ¿Qué hace esquina51?</h2>
-      <p>Diseñamos e implementamos estrategias digitales que combinan publicidad, automatización y análisis para que tu negocio crezca sin complicarte.</p>
-      <ul>
-        <li>✅ Publicidad digital efectiva (Meta, Google)</li>
-        <li>✅ Automatización de marketing (emails, flujos, WhatsApp)</li>
-        <li>✅ Consultoría estratégica personalizada</li>
-        <li>✅ Branding y posicionamiento digital</li>
-      </ul>
-    </section>
+  <section class="hero" id="inicio">
+    <h2>Quiénes somos</h2>
+    <p>
+      En esquina51.pro somos una micro agencia de marketing digital que combina estrategia, datos y creatividad para ayudarte a vender más y crecer mejor. Nos especializamos en campañas efectivas, automatización inteligente y asesoría personalizada para marcas que buscan resultados reales, no solo presencia digital. Elegirnos es trabajar con un equipo que entiende tu negocio, piensa como socio y ejecuta como experto.
+    </p>
+  </section>
 
-    <section>
-      <h2>🔄 Nuestro proceso simple y ágil</h2>
-      <ol>
-        <li>Diagnóstico de tu situación actual</li>
-        <li>Diseño de estrategia y ejecución</li>
-        <li>Seguimiento y optimización de resultados</li>
-      </ol>
-    </section>
+  <section class="services" id="servicios">
+    <h2>Servicios que ofrecemos</h2>
 
-    <section>
-      <h2>📈 Resultados reales</h2>
-      <ul>
-        <li>📊 +340% en leads para inmobiliaria en Guatemala</li>
-        <li>💬 70% menos tiempo en seguimiento con automatización</li>
-        <li>📥 Campañas con +10X ROAS en e-commerce</li>
-      </ul>
-      <blockquote>“Trabajar con esquina51 nos permitió organizar nuestras ventas, automatizar tareas y crecer sin perder tiempo.” — Cliente satisfecho</blockquote>
-    </section>
+    <article class="service-item">
+      <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+      <h3>Campañas publicitarias digitales</h3>
+      <p>Diseño y gestión de campañas en redes sociales, Google Ads y más para maximizar tu alcance y ventas.</p>
+    </article>
 
-    <section>
-      <h2>👨‍💼 ¿Quién está detrás de esquina51?</h2>
-      <p>Un equipo de profesionales con más de 10 años de experiencia en marketing, ventas y estrategia digital.</p>
-      <p>Hemos asesorado a negocios en Guatemala, Perú y Centroamérica, desde emprendedores hasta constructoras.</p>
-      <p>💡 Creemos en la estrategia con ejecución rápida. Tu crecimiento es el nuestro.</p>
-    </section>
+    <article class="service-item">
+      <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+      <h3>Automatización de marketing y ventas</h3>
+      <p>Implementamos flujos inteligentes para convertir leads y mantener comunicación efectiva con tus clientes.</p>
+    </article>
 
-    <footer>
-      <p>© 2025 esquina51 · Agencia Digital Estratégica</p>
-      <p>📧 hola@esquina51.com · 🌐 www.esquina51.com · 📱 WhatsApp: +502 3307-3716</p>
-    </footer>
+    <article class="service-item">
+      <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <h3>Consultoría estratégica de marketing</h3>
+      <p>Asesoría personalizada para diseñar y ejecutar estrategias que alinean marketing con tus objetivos de negocio.</p>
+    </article>
 
-  </div>
+    <article class="service-item">
+      <div class="service-icon"><i class="fa-solid fa-pencil"></i></div>
+      <h3>Branding y posicionamiento de marca</h3>
+      <p>Creación y fortalecimiento de identidad de marca para destacar en un mercado competitivo.</p>
+    </article>
+
+    <article class="service-item">
+      <div class="service-icon"><i class="fa-solid fa-camera-retro"></i></div>
+      <h3>Gestión y creación de contenido para redes sociales</h3>
+      <p>Generamos contenido relevante y atractivo que conecta con tu audiencia y potencia tu imagen.</p>
+    </article>
+
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <h2>Contacto</h2>
+    <p>Para consultas y asesoría, contáctanos vía WhatsApp:</p>
+    <a class="btn-whatsapp" href="https://wa.me/50233073716" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 esquina51.pro - Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>
