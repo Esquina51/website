@@ -1,187 +1,79 @@
 <!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="es">
-	<head>
-		<title>esquina51.pro - Marketing Digital Estratégico</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Micro agencia de marketing digital enfocada en resultados reales. Campañas, automatización, branding y más." />
-		<meta name="author" content="esquina51.pro" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="favicon.ico" />
-		<!-- FontAwesome para íconos -->
-		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-		<style>
-			:root {
-				--accent-color: #e67e22;
-			}
-			#intro {
-				background: #2c3e50;
-				color: white;
-				padding: 5rem 2rem 6rem 2rem;
-				text-align: center;
-				border-radius: 0 0 3rem 3rem;
-			}
-			#intro h1 {
-				font-size: 3rem;
-				margin-bottom: 0.5rem;
-				letter-spacing: 0.05em;
-				font-weight: 700;
-			}
-			#intro p {
-				font-size: 1.3rem;
-				max-width: 700px;
-				margin: 0 auto;
-				line-height: 1.6;
-			}
-			.services {
-				max-width: 960px;
-				margin: 3rem auto 5rem auto;
-				display: grid;
-				grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-				gap: 2.5rem;
-				padding: 0 2rem;
-			}
-			.service {
-				background: #fff;
-				padding: 2rem 1.5rem;
-				border-radius: 1rem;
-				box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
-				text-align: center;
-			}
-			.service:hover {
-				transform: translateY(-10px);
-				box-shadow: 0 16px 40px rgb(0 0 0 / 0.15);
-			}
-			.service .icon {
-				font-size: 3.5rem;
-				color: var(--accent-color);
-				margin-bottom: 1rem;
-			}
-			.service h3 {
-				margin-bottom: 1rem;
-				color: #2c3e50;
-			}
-			.service p {
-				font-size: 1rem;
-				line-height: 1.5;
-				color: #555;
-			}
-			.cta-section {
-				background: #e67e22;
-				color: white;
-				padding: 3rem 1rem;
-				text-align: center;
-				border-radius: 2rem;
-				max-width: 640px;
-				margin: 0 auto 5rem auto;
-				box-shadow: 0 12px 30px rgb(230 126 34 / 0.4);
-			}
-			.cta-section h2 {
-				margin-bottom: 1rem;
-				font-size: 2rem;
-			}
-			.cta-section a {
-				display: inline-block;
-				background: white;
-				color: var(--accent-color);
-				font-weight: 700;
-				padding: 1rem 2.5rem;
-				border-radius: 50px;
-				font-size: 1.2rem;
-				text-decoration: none;
-				box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
-				transition: background-color 0.3s ease, color 0.3s ease;
-			}
-			.cta-section a:hover {
-				background: #d96c17;
-				color: white;
-			}
-			footer {
-				text-align: center;
-				padding: 2rem 1rem;
-				color: #777;
-				font-size: 0.9rem;
-			}
-			@media (max-width: 480px) {
-				#intro h1 {
-					font-size: 2.3rem;
-				}
-				.services {
-					grid-template-columns: 1fr;
-					padding: 0 1rem;
-				}
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>esquina51.pro - Agencia Boutique de Marketing Digital</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f7f9fb; color: #333; }
+        header { background: #2c3e50; color: white; text-align: center; padding: 4rem 2rem; }
+        header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        header p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .service { background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 8px 20px rgba(0,0,0,0.05); text-align: center; }
+        .service i { font-size: 3rem; color: #e67e22; margin-bottom: 1rem; }
+        .service h3 { margin-bottom: 0.5rem; }
+        .cta { background: #e67e22; color: white; padding: 3rem 2rem; text-align: center; border-radius: 10px; margin: 2rem auto; max-width: 800px; }
+        .cta a { background: white; color: #e67e22; padding: 1rem 2rem; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 1rem; }
+        footer { text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #777; }
+        .graphic { text-align: center; margin: 3rem auto; }
+        .graphic svg { max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+<header>
+    <h1>esquina51.pro</h1>
+    <p>Agencia boutique de marketing digital que combina estrategia, datos y creatividad para ayudarte a vender más y crecer mejor. Nos especializamos en campañas efectivas, automatización inteligente y asesoría personalizada para marcas que buscan resultados reales, no solo presencia digital. Elegirnos es trabajar con un equipo que entiende tu negocio, piensa como socio y ejecuta como experto.</p>
+</header>
 
-			<!-- Intro -->
-			<section id="intro" class="main">
-				<h1>esquina51.pro</h1>
-				<p>
-					Micro agencia de marketing digital que combina estrategia, datos y creatividad para ayudarte a vender más y crecer mejor. Nos especializamos en campañas efectivas, automatización inteligente y asesoría personalizada para marcas que buscan resultados reales, no solo presencia digital. Elegirnos es trabajar con un equipo que entiende tu negocio, piensa como socio y ejecuta como experto.
-				</p>
-			</section>
+<section class="graphic">
+    <!-- Ilustración estilo Icons8 en SVG -->
+    <svg width="500" height="250" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="500" height="250" rx="20" ry="20" fill="#e67e22"/>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="24" font-family="Arial">Ilustración de Marketing Digital</text>
+    </svg>
+</section>
 
-			<!-- Services -->
-			<section class="services main">
-				<article class="service">
-					<div class="icon"><i class="fas fa-bullhorn"></i></div>
-					<h3>Campañas publicitarias digitales</h3>
-					<p>Diseño y gestión de campañas en redes sociales, Google Ads y más para maximizar tu alcance y ventas.</p>
-				</article>
-				<article class="service">
-					<div class="icon"><i class="fas fa-robot"></i></div>
-					<h3>Automatización de marketing y ventas</h3>
-					<p>Implementamos flujos inteligentes para convertir leads y mantener comunicación efectiva con tus clientes.</p>
-				</article>
-				<article class="service">
-					<div class="icon"><i class="fas fa-lightbulb"></i></div>
-					<h3>Consultoría estratégica de marketing</h3>
-					<p>Asesoría personalizada para diseñar y ejecutar estrategias que alinean marketing con tus objetivos de negocio.</p>
-				</article>
-				<article class="service">
-					<div class="icon"><i class="fas fa-pencil-alt"></i></div>
-					<h3>Branding y posicionamiento de marca</h3>
-					<p>Creación y fortalecimiento de identidad de marca para destacar en un mercado competitivo.</p>
-				</article>
-				<article class="service">
-					<div class="icon"><i class="fas fa-camera-retro"></i></div>
-					<h3>Gestión y creación de contenido para redes sociales</h3>
-					<p>Generamos contenido relevante y atractivo que conecta con tu audiencia y potencia tu imagen.</p>
-				</article>
-			</section>
+<section class="services">
+    <div class="service">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Campañas Publicitarias</h3>
+        <p>Gestionamos campañas en redes, Google y más para maximizar resultados.</p>
+    </div>
+    <div class="service">
+        <i class="fas fa-robot"></i>
+        <h3>Automatización Inteligente</h3>
+        <p>Flujos automatizados para convertir leads y fidelizar clientes.</p>
+    </div>
+    <div class="service">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Consultoría Estratégica</h3>
+        <p>Te ayudamos a diseñar y ejecutar estrategias que sí funcionan.</p>
+    </div>
+    <div class="service">
+        <i class="fas fa-pencil-alt"></i>
+        <h3>Branding</h3>
+        <p>Posicionamos tu marca con una identidad fuerte y profesional.</p>
+    </div>
+    <div class="service">
+        <i class="fas fa-camera-retro"></i>
+        <h3>Contenido Creativo</h3>
+        <p>Diseño y gestión de contenido para redes que conecta y convierte.</p>
+    </div>
+</section>
 
-			<!-- Call to Action -->
-			<section class="cta-section">
-				<h2>¿Quieres impulsar tu negocio? Contáctanos</h2>
-				<a href="https://wa.me/50233073716" target="_blank" rel="noopener noreferrer">
-					<i class="fab fa-whatsapp"></i> Escríbenos ahora
-				</a>
-			</section>
+<section class="cta">
+    <h2>¿Quieres impulsar tu negocio?</h2>
+    <p>Contáctanos para una asesoría personalizada.</p>
+    <a href="https://wa.me/50233073716" target="_blank">Escríbenos por WhatsApp</a>
+</section>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<p>© 2025 esquina51.pro - Todos los derechos reservados</p>
-			</footer>
+<footer>
+    <p>© 2025 esquina51.pro - Todos los derechos reservados</p>
+</footer>
 
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
