@@ -1,178 +1,187 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>esquina51.pro - Agencia de Marketing Digital</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!-- FontAwesome para íconos -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-pIVl+6zN+HLnRO1clz3OWlHc+V+6+JH8kBv4KFcMr7F4He8cHbL5Mr2lxIvXwRmkHdnJxfysG8DdQ+3PqDaxjg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <style>
-    /* Estilos personalizados para esquina51 */
-    :root {
-      --main-color: #2c3e50;
-      --accent-color: #e67e22;
-      --bg-color: #f5f7fa;
-      --text-color: #333;
-      --btn-bg: var(--accent-color);
-      --btn-hover: #d96c17;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      line-height: 1.6;
-    }
-    header, footer {
-      background-color: var(--main-color);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    h1, h2, h3 {
-      color: var(--main-color);
-      margin-top: 0;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 1rem;
-    }
-    .hero {
-      padding: 3rem 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-top: 1rem;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-    .service-item {
-      background: white;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .service-item:hover {
-      transform: translateY(-5px);
-    }
-    .service-icon {
-      font-size: 3rem;
-      color: var(--accent-color);
-      margin-bottom: 1rem;
-    }
-    .contact-section {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    .btn-whatsapp {
-      background-color: var(--btn-bg);
-      color: white;
-      font-weight: 600;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 1.2rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.8rem;
-      transition: background-color 0.3s ease;
-    }
-    .btn-whatsapp:hover {
-      background-color: var(--btn-hover);
-    }
-    footer p {
-      margin: 0;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
-</head>
-<body>
+	<head>
+		<title>esquina51.pro - Marketing Digital Estratégico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Micro agencia de marketing digital enfocada en resultados reales. Campañas, automatización, branding y más." />
+		<meta name="author" content="esquina51.pro" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!-- FontAwesome para íconos -->
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<style>
+			:root {
+				--accent-color: #e67e22;
+			}
+			#intro {
+				background: #2c3e50;
+				color: white;
+				padding: 5rem 2rem 6rem 2rem;
+				text-align: center;
+				border-radius: 0 0 3rem 3rem;
+			}
+			#intro h1 {
+				font-size: 3rem;
+				margin-bottom: 0.5rem;
+				letter-spacing: 0.05em;
+				font-weight: 700;
+			}
+			#intro p {
+				font-size: 1.3rem;
+				max-width: 700px;
+				margin: 0 auto;
+				line-height: 1.6;
+			}
+			.services {
+				max-width: 960px;
+				margin: 3rem auto 5rem auto;
+				display: grid;
+				grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+				gap: 2.5rem;
+				padding: 0 2rem;
+			}
+			.service {
+				background: #fff;
+				padding: 2rem 1.5rem;
+				border-radius: 1rem;
+				box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				text-align: center;
+			}
+			.service:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 16px 40px rgb(0 0 0 / 0.15);
+			}
+			.service .icon {
+				font-size: 3.5rem;
+				color: var(--accent-color);
+				margin-bottom: 1rem;
+			}
+			.service h3 {
+				margin-bottom: 1rem;
+				color: #2c3e50;
+			}
+			.service p {
+				font-size: 1rem;
+				line-height: 1.5;
+				color: #555;
+			}
+			.cta-section {
+				background: #e67e22;
+				color: white;
+				padding: 3rem 1rem;
+				text-align: center;
+				border-radius: 2rem;
+				max-width: 640px;
+				margin: 0 auto 5rem auto;
+				box-shadow: 0 12px 30px rgb(230 126 34 / 0.4);
+			}
+			.cta-section h2 {
+				margin-bottom: 1rem;
+				font-size: 2rem;
+			}
+			.cta-section a {
+				display: inline-block;
+				background: white;
+				color: var(--accent-color);
+				font-weight: 700;
+				padding: 1rem 2.5rem;
+				border-radius: 50px;
+				font-size: 1.2rem;
+				text-decoration: none;
+				box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+				transition: background-color 0.3s ease, color 0.3s ease;
+			}
+			.cta-section a:hover {
+				background: #d96c17;
+				color: white;
+			}
+			footer {
+				text-align: center;
+				padding: 2rem 1rem;
+				color: #777;
+				font-size: 0.9rem;
+			}
+			@media (max-width: 480px) {
+				#intro h1 {
+					font-size: 2.3rem;
+				}
+				.services {
+					grid-template-columns: 1fr;
+					padding: 0 1rem;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
 
-<header>
-  <h1>esquina51.pro</h1>
-  <p>Micro agencia de marketing digital para vender más y crecer mejor</p>
-</header>
+		<!-- Wrapper -->
+		<div id="wrapper">
 
-<main class="container">
+			<!-- Intro -->
+			<section id="intro" class="main">
+				<h1>esquina51.pro</h1>
+				<p>
+					Micro agencia de marketing digital que combina estrategia, datos y creatividad para ayudarte a vender más y crecer mejor. Nos especializamos en campañas efectivas, automatización inteligente y asesoría personalizada para marcas que buscan resultados reales, no solo presencia digital. Elegirnos es trabajar con un equipo que entiende tu negocio, piensa como socio y ejecuta como experto.
+				</p>
+			</section>
 
-  <section class="hero" id="inicio">
-    <h2>Quiénes somos</h2>
-    <p>
-      En esquina51.pro somos una micro agencia de marketing digital que combina estrategia, datos y creatividad para ayudarte a vender más y crecer mejor. Nos especializamos en campañas efectivas, automatización inteligente y asesoría personalizada para marcas que buscan resultados reales, no solo presencia digital. Elegirnos es trabajar con un equipo que entiende tu negocio, piensa como socio y ejecuta como experto.
-    </p>
-  </section>
+			<!-- Services -->
+			<section class="services main">
+				<article class="service">
+					<div class="icon"><i class="fas fa-bullhorn"></i></div>
+					<h3>Campañas publicitarias digitales</h3>
+					<p>Diseño y gestión de campañas en redes sociales, Google Ads y más para maximizar tu alcance y ventas.</p>
+				</article>
+				<article class="service">
+					<div class="icon"><i class="fas fa-robot"></i></div>
+					<h3>Automatización de marketing y ventas</h3>
+					<p>Implementamos flujos inteligentes para convertir leads y mantener comunicación efectiva con tus clientes.</p>
+				</article>
+				<article class="service">
+					<div class="icon"><i class="fas fa-lightbulb"></i></div>
+					<h3>Consultoría estratégica de marketing</h3>
+					<p>Asesoría personalizada para diseñar y ejecutar estrategias que alinean marketing con tus objetivos de negocio.</p>
+				</article>
+				<article class="service">
+					<div class="icon"><i class="fas fa-pencil-alt"></i></div>
+					<h3>Branding y posicionamiento de marca</h3>
+					<p>Creación y fortalecimiento de identidad de marca para destacar en un mercado competitivo.</p>
+				</article>
+				<article class="service">
+					<div class="icon"><i class="fas fa-camera-retro"></i></div>
+					<h3>Gestión y creación de contenido para redes sociales</h3>
+					<p>Generamos contenido relevante y atractivo que conecta con tu audiencia y potencia tu imagen.</p>
+				</article>
+			</section>
 
-  <section class="services" id="servicios">
-    <h2>Servicios que ofrecemos</h2>
+			<!-- Call to Action -->
+			<section class="cta-section">
+				<h2>¿Quieres impulsar tu negocio? Contáctanos</h2>
+				<a href="https://wa.me/50233073716" target="_blank" rel="noopener noreferrer">
+					<i class="fab fa-whatsapp"></i> Escríbenos ahora
+				</a>
+			</section>
 
-    <article class="service-item">
-      <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
-      <h3>Campañas publicitarias digitales</h3>
-      <p>Diseño y gestión de campañas en redes sociales, Google Ads y más para maximizar tu alcance y ventas.</p>
-    </article>
+			<!-- Footer -->
+			<footer id="footer">
+				<p>© 2025 esquina51.pro - Todos los derechos reservados</p>
+			</footer>
 
-    <article class="service-item">
-      <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
-      <h3>Automatización de marketing y ventas</h3>
-      <p>Implementamos flujos inteligentes para convertir leads y mantener comunicación efectiva con tus clientes.</p>
-    </article>
+		</div>
 
-    <article class="service-item">
-      <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
-      <h3>Consultoría estratégica de marketing</h3>
-      <p>Asesoría personalizada para diseñar y ejecutar estrategias que alinean marketing con tus objetivos de negocio.</p>
-    </article>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-    <article class="service-item">
-      <div class="service-icon"><i class="fa-solid fa-pencil"></i></div>
-      <h3>Branding y posicionamiento de marca</h3>
-      <p>Creación y fortalecimiento de identidad de marca para destacar en un mercado competitivo.</p>
-    </article>
-
-    <article class="service-item">
-      <div class="service-icon"><i class="fa-solid fa-camera-retro"></i></div>
-      <h3>Gestión y creación de contenido para redes sociales</h3>
-      <p>Generamos contenido relevante y atractivo que conecta con tu audiencia y potencia tu imagen.</p>
-    </article>
-
-  </section>
-
-  <section class="contact-section" id="contacto">
-    <h2>Contacto</h2>
-    <p>Para consultas y asesoría, contáctanos vía WhatsApp:</p>
-    <a class="btn-whatsapp" href="https://wa.me/50233073716" target="_blank" rel="noopener noreferrer">
-      <i class="fa-brands fa-whatsapp"></i> Escríbenos ahora
-    </a>
-  </section>
-
-</main>
-
-<footer>
-  <p>© 2025 esquina51.pro - Todos los derechos reservados</p>
-</footer>
-
-</body>
+	</body>
 </html>
